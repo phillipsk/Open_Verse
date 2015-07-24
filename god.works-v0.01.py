@@ -3,11 +3,16 @@ import tkinter as tk
 calc = tk.Tk()
 calc.title("God.Works")
 
+FRONT_PAGE = ['OT','NT']
+
 buttons = [
-'7',  '8',  '9',  '*',  'C',
+'OT',  'NT']
+"""
+,  '9',  '*',  'C',
 '4',  '5',  '6',  '/',  'Neg',
 '1',  '2',  '3',  '-',  '$',
 '0',  '.',  '=',  '+',  '@' ]
+"""
 
 # set up GUI
 row = 1
@@ -15,15 +20,15 @@ col = 0
 for i in buttons:
     button_style = 'raised'
     action = lambda x = i: click_event(x)
-    tk.Button(calc, text = i, width = 7, height = 7, relief = button_style, command = action) \
+    tk.Button(calc, text = i, width = 17, height = 17, relief = button_style, command = action) \
 	.grid(row = row, column = col, sticky = 'nesw')
     col += 1
-    if col > 4:
+    if col > 0: # if col > 4
         col = 0
         row += 1
 
 display = tk.Entry(calc, width = 40, bg = "white")
-display.grid(row = 0, column = 0, columnspan = 5)
+display.grid(row = 0, column = 0, columnspan = 1) # columnspan = 5
 
 def click_event(key):
 
