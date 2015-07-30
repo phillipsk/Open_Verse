@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # mysql -u openVuser -popenVpw openVdev
-
+# http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python
 import MySQLdb
 
 db = MySQLdb.connect(host="localhost", # your host, usually localhost
