@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# ./mysql-db-create.sh testDBname testDBuser testDBpass
 # mysql -u openVuser -popenVpw openVdev
 # http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python
 import MySQLdb
