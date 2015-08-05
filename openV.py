@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# sudo apt-get install python-mysqldb
+# ./mysql-db-create.sh openVdev openVuser openVpw
 # ./mysql-db-create.sh testDBname testDBuser testDBpass
 # mysql -u openVuser -popenVpw openVdev
 # http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python
